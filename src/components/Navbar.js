@@ -8,13 +8,13 @@ class Navbar extends Component {
 
             <div className="navbar-fixed">
                 <ul id="dropdown1" className="dropdown-content">
-                    <li><a href="index.html" className="waves-effect waves-purple white-text">About Me</a></li>
+                    <li><a href="#" className="waves-effect waves-purple white-text">About Me</a></li>
                     <li className="divider"></li>
-                    <li><a href="portfolio.html" className="waves-effect waves-purple white-text">Portfolio</a></li>
+                    <li><a href="#" className="waves-effect waves-purple white-text">Portfolio</a></li>
                     <li className="divider"></li>
-                    <li><a href="contact.html" className="waves-effect waves-purple white-text">Contact</a></li>
+                    <li><a href="#" className="waves-effect waves-purple white-text">Contact</a></li>
                     <li className="divider"></li>
-                    <li><a href="./assets/docs/Greco Resume.pdf"
+                    <li><a href="#"
                         className="waves-effect waves-purple white-text" target="_blank">Resume</a></li>
                 </ul>
                 <nav>
