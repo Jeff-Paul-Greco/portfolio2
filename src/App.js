@@ -1,24 +1,10 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import Portfolio from "./components/pages/Portfolio";
-import Navbar from "./components/Navbar";
+import PortfolioContainer from "./components/PortfolioContainer";
 
 function App() {
-  return (
-    <Router>
-
-      <div>
-
-        <Navbar>
-        </Navbar>
-      
-      </div>
-
-    </Router>
-  );
+  return <PortfolioContainer />;
 }
 
 export default App;
