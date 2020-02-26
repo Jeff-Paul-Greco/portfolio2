@@ -1,24 +1,40 @@
 {
   "files": {
-    "main.css": "/portfolio2/static/css/main.f6c18dac.chunk.css",
-    "main.js": "/portfolio2/static/js/main.459028db.chunk.js",
-    "main.js.map": "/portfolio2/static/js/main.459028db.chunk.js.map",
+    "main.css": "/portfolio2/static/css/main.af506950.chunk.css",
+    "main.js": "/portfolio2/static/js/main.342c9ae0.chunk.js",
+    "main.js.map": "/portfolio2/static/js/main.342c9ae0.chunk.js.map",
     "runtime-main.js": "/portfolio2/static/js/runtime-main.ff17debd.js",
     "runtime-main.js.map": "/portfolio2/static/js/runtime-main.ff17debd.js.map",
-    "static/js/2.986b3507.chunk.js": "/portfolio2/static/js/2.986b3507.chunk.js",
-    "static/js/2.986b3507.chunk.js.map": "/portfolio2/static/js/2.986b3507.chunk.js.map",
+    "static/css/2.3c1ddb0a.chunk.css": "/portfolio2/static/css/2.3c1ddb0a.chunk.css",
+    "static/js/2.d999be0e.chunk.js": "/portfolio2/static/js/2.d999be0e.chunk.js",
+    "static/js/2.d999be0e.chunk.js.map": "/portfolio2/static/js/2.d999be0e.chunk.js.map",
     "index.html": "/portfolio2/index.html",
-    "precache-manifest.e16d801f2bb25f1a900f8643cf8eec32.js": "/portfolio2/precache-manifest.e16d801f2bb25f1a900f8643cf8eec32.js",
+    "precache-manifest.57ee08b41ed07135edbca7ede30cfe05.js": "/portfolio2/precache-manifest.57ee08b41ed07135edbca7ede30cfe05.js",
     "service-worker.js": "/portfolio2/service-worker.js",
-    "static/css/main.f6c18dac.chunk.css.map": "/portfolio2/static/css/main.f6c18dac.chunk.css.map",
-    "static/js/2.986b3507.chunk.js.LICENSE": "/portfolio2/static/js/2.986b3507.chunk.js.LICENSE",
-    "static/media/GrecoResume.pdf": "/portfolio2/static/media/GrecoResume.34f3a7bb.pdf",
-    "static/media/index.css": "/portfolio2/static/media/trivia.8b9682db.png"
+    "static/css/2.3c1ddb0a.chunk.css.map": "/portfolio2/static/css/2.3c1ddb0a.chunk.css.map",
+    "static/css/main.af506950.chunk.css.map": "/portfolio2/static/css/main.af506950.chunk.css.map",
+    "static/js/2.d999be0e.chunk.js.LICENSE": "/portfolio2/static/js/2.d999be0e.chunk.js.LICENSE",
+    "static/media/index.css": "/portfolio2/static/media/psychic.96101fec.png",
+    "static/media/bamazon.png": "/portfolio2/static/media/bamazon.5ba25b37.png",
+    "static/media/burger.png": "/portfolio2/static/media/burger.4b7efd2f.png",
+    "static/media/clicky.PNG": "/portfolio2/static/media/clicky.9edb0fd2.PNG",
+    "static/media/custom-corner.PNG": "/portfolio2/static/media/custom-corner.9c162f59.PNG",
+    "static/media/doomsday.png": "/portfolio2/static/media/doomsday.c78a6127.png",
+    "static/media/email.png": "/portfolio2/static/media/email.da6dc03f.png",
+    "static/media/friend-finder.png": "/portfolio2/static/media/friend-finder.56f894ee.png",
+    "static/media/google-books.PNG": "/portfolio2/static/media/google-books.4b56a347.PNG",
+    "static/media/house-party.png": "/portfolio2/static/media/house-party.ae45e4ac.png",
+    "static/media/liri.png": "/portfolio2/static/media/liri.5282759b.png",
+    "static/media/pic.png": "/portfolio2/static/media/pic.957cd7cf.png",
+    "static/media/scraper.PNG": "/portfolio2/static/media/scraper.27e10960.PNG",
+    "static/media/train.png": "/portfolio2/static/media/train.bb9fa346.png",
+    "static/media/trivia.png": "/portfolio2/static/media/trivia.d1e1b01a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ff17debd.js",
-    "static/js/2.986b3507.chunk.js",
-    "static/css/main.f6c18dac.chunk.css",
-    "static/js/main.459028db.chunk.js"
+    "static/css/2.3c1ddb0a.chunk.css",
+    "static/js/2.d999be0e.chunk.js",
+    "static/css/main.af506950.chunk.css",
+    "static/js/main.342c9ae0.chunk.js"
   ]
 }
