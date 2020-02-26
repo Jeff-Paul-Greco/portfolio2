@@ -34,19 +34,30 @@ function Navbar(props) {
                             trigger={<a href="#!" node="button" id="dropdown" >Menu
                             <i className="material-icons right">arrow_drop_down</i>
                             </a>}
-                        >
+                        >   
+                            <li>
                             <a href="#!" onClick={() => props.handlePageChange("About")} className="waves-effect waves-purple white-text">
-                                About</a>
+                                About Me</a>
                                 <Divider />
+                            </li>
+                        
+                            <li>
                             <a href="#!" onClick={() => props.handlePageChange("Contact")} className="waves-effect waves-purple white-text">
                                 Contact</a>
                                 <Divider />
+                            </li>
+
+                            <li>
                             <a href="#!" onClick={() => props.handlePageChange("Portfolio")} className="waves-effect waves-purple white-text">
                                 Portfolio</a>
-                                <Divider />
+                             <Divider />
+                            </li>
+                                
+                            <li>
                             <a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" target="_blank" rel="noopener noreferrer" className="waves-effect waves-purple white-text">
                                 Resume</a>
-                                <Divider />
+                            </li>
+                                
                         </Dropdown>
                     </ul>
                 </div>
