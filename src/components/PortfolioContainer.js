@@ -5,6 +5,8 @@ import Portfolio from "./pages/Portfolio";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+import Demo from "./pages/Test"
+
 class PortfolioContainer extends Component {
     state = {
       currentPage: ""
@@ -20,7 +22,7 @@ class PortfolioContainer extends Component {
       if (this.state.currentPage === "About") {
         return <About />;
       } else if (this.state.currentPage === "Portfolio") {
-        return <Portfolio />;
+        return <Demo />;
       } else if (this.state.currentPage === "Contact") {
         return <Contact />;
       } 

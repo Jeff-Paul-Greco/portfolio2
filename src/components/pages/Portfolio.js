@@ -1,9 +1,17 @@
 import React, { Component } from "react";
+// import { M } from 'materialize-css/dist/js/materialize.min.js';
 import CustomCorner from "../../images/custom-corner.PNG"
 import GoogleBooks from "../../images/google-books.PNG"
 // import Carousel from 'react-responsive-carousel';
 
 class Portfolio extends Component {
+
+    componentDidMount() {
+        var elem = document.querySelector('.carousel.carousel-slider');
+        elem.carousel(
+            "carousel"
+        );
+    }
 
     render() {
         return (
@@ -38,16 +46,16 @@ class Portfolio extends Component {
                 <div className="carousel-fixed-item center-align center" id="carousel-footer">
 
                     <h3 id="project">My Projects</h3>
-                    <a href="#!" className="btn-large waves-effect waves-purple light-blue black-text darken-text-2" id="prev">prev</a>
-                    <a href="#!" className="btn-large waves-effect waves-purple light-blue black-text darken-text-2" id="next">next</a>
+                    <a href="#!" prev={this.prev} onClick={this.prev} className="btn-large waves-effect waves-purple light-blue black-text darken-text-2" id="prev">prev</a>
+                    <a href="#!" next={this.next} onClick={this.next} className="btn-large waves-effect waves-purple light-blue black-text darken-text-2" id="next">next</a>
                 </div>
 
                 <div src={CustomCorner} alt="custom-corner" className="carousel-item black white-text pointer" id="custom-corner">
-                <p id="click-project"></p>
+                    <p id="click-project"></p>
                 </div>
 
                 <div src={GoogleBooks} alt="google-books" className="carousel-item black white-text pointer" id="custom-corner">
-                <p id="click-project"></p>
+                    <p id="click-project"></p>
                 </div>
 
                 <div className="carousel-item black white-text pointer" id="google-books">
