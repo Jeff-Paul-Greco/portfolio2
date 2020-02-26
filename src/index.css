@@ -162,7 +162,7 @@ h3 {
 }
 
 #custom-corner {
-  background-image: url("./images/custom-corner.PNG");
+  background-image: url("/images/custom-corner.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
