@@ -63,7 +63,7 @@ class Contact extends Component {
                                     className="icon" alt="github" /></a>
                                 <a href="https://www.linkedin.com/in/jeff-greco-019a28189" rel="noopener noreferrer" target="_blank"><img
                                     src={Linkedin} className="icon" alt="linkedin" /></a>
-                                <a href="./assets/docs/Greco Resume.pdf"
+                                <a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" rel="noopener noreferrer"
                                     target="_blank"><img src={Resume} className="icon" alt="resume" id="last-icon" /></a>
                             </div>
                         </div>

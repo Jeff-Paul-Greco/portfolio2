@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 class PortfolioContainer extends Component {
     state = {
@@ -32,6 +33,7 @@ class PortfolioContainer extends Component {
           handlePageChange={this.handlePageChange}
           />
           {this.renderPage()}
+          <Footer/>
         </div>
       );
     }
