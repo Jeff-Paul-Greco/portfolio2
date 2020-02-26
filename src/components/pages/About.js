@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Pic from "../../images/pic.png"
 
 class About extends Component {
 
@@ -11,7 +12,7 @@ class About extends Component {
                     <div className="col s12 m12">
                         <div className="card horizontal z-depth-5" id="horizontal">
                             <div className="card-image">
-                                <img src="https://jeff-paul-greco.github.io/portfolio/assets/images/pic.png" id="profile-pic" alt="pic"></img>
+                                <img src={Pic} id="profile-pic" alt="pic"></img>
                                     <span className="card-title" id="pic-text">About Me</span>
                             </div>
                                 <div className="card-content">
