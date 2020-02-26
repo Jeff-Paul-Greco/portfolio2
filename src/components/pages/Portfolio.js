@@ -1,110 +1,72 @@
-import React, { Component } from "react";
-// import { M } from 'materialize-css/dist/js/materialize.min.js';
+import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 import CustomCorner from "../../images/custom-corner.PNG"
 import GoogleBooks from "../../images/google-books.PNG"
-// import Carousel from 'react-responsive-carousel';
+import Scraper from "../../images/scraper.PNG"
+import Clicky from "../../images/clicky.PNG"
+import Trivia from "../../images/trivia.png"
+import Doomsday from "../../images/doomsday.png"
+import HouseParty from "../../images/house-party.png"
+import Train from "../../images/train.png"
+import Friend from "../../images/friend-finder.png"
+import Burger from "../../images/burger.png"
+import Liri from "../../images/liri.png"
+import Bamazon from "../../images/bamazon.png"
 
 class Portfolio extends Component {
-
-    componentDidMount() {
-        var elem = document.querySelector('.carousel.carousel-slider');
-        elem.carousel(
-            "carousel"
-        );
-    }
-
     render() {
         return (
-            // <Carousel showArrows={true} >
-            //     <div>
-            //         <img src="#!" alt="" />
-            //         <p className="legend">Legend 1</p>
-            //     </div>
-            //     <div>
-            //         <img src="#!" alt="" />
-            //         <p className="legend">Legend 2</p>
-            //     </div>
-            //     <div>
-            //         <img src="#!" alt="" />
-            //         <p className="legend">Legend 3</p>
-            //     </div>
-            //     <div>
-            //         <img src="#!" alt="" />
-            //         <p className="legend">Legend 4</p>
-            //     </div>
-            //     <div>
-            //         <img src="assets/5.jpeg" alt="" />
-            //         <p className="legend">Legend 5</p>
-            //     </div>
-            //     <div>
-            //         <img src="assets/6.jpeg" alt="" />
-            //         <p className="legend">Legend 6</p>
-            //     </div>
-            // </Carousel>
-            <div className="carousel carousel-slider">
-
-                <div className="carousel-fixed-item center-align center" id="carousel-footer">
-
-                    <h3 id="project">My Projects</h3>
-                    <a href="#!" prev={this.prev} onClick={this.prev} className="btn-large waves-effect waves-purple light-blue black-text darken-text-2" id="prev">prev</a>
-                    <a href="#!" next={this.next} onClick={this.next} className="btn-large waves-effect waves-purple light-blue black-text darken-text-2" id="next">next</a>
-                </div>
-
-                <div src={CustomCorner} alt="custom-corner" className="carousel-item black white-text pointer" id="custom-corner">
-                    <p id="click-project"></p>
-                </div>
-
-                <div src={GoogleBooks} alt="google-books" className="carousel-item black white-text pointer" id="custom-corner">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="google-books">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="scraper">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="clicky">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="trivia">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="doomsday">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="house-party">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="train">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="friend">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="burger">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="liri">
-                    <p id="click-project"></p>
-                </div>
-
-                <div className="carousel-item black white-text pointer" id="bamazon">
-                    <p id="click-project"></p>
-                </div>
-
+            <div className="portfolio-wrapper">
+                <Carousel
+                    showIndicators={true}
+                    showStatus={false}
+                    showThumbs={false}
+                    height={"100%"}
+                    axis={"horizontal"}
+                    infiniteLoop={true}
+                >
+                    <div>
+                        <img src={CustomCorner} alt="custom-corner" />
+                    </div>
+                    <div>
+                        <img src={GoogleBooks} alt="google-books" />
+                    </div>
+                    <div>
+                        <img src={Scraper} alt="scraper" />
+                    </div>
+                    <div>
+                        <img src={Clicky} alt="clicky" />
+                    </div>
+                    <div>
+                        <img src={Trivia} alt="trivia" />
+                    </div>
+                    <div>
+                        <img src={HouseParty} alt="house-party" />
+                    </div>
+                    <div>
+                        <img src={Doomsday} alt="doomsday" />
+                    </div>
+                    <div>
+                        <img src={Train} alt="train" />
+                    </div>
+                    <div>
+                        <img src={Friend} alt="friend" />
+                    </div>
+                    <div>
+                        <img src={Burger} alt="burger" />
+                    </div>
+                    <div>
+                        <img src={Liri} alt="liri" />
+                    </div>
+                    <div>
+                        <img src={Bamazon} alt="bamazon" />
+                    </div>
+                </Carousel>
             </div>
         );
     }
 };
 
-export default Portfolio;
+export default Portfolio

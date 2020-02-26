@@ -27,7 +27,15 @@ main {
 }
 
 .carousel {
-  min-height: 100vh;
+  min-height: 100%;
+}
+
+.portfolio-wrapper {
+  min-height: 100vh
+}
+
+.carousel-slider {
+  min-height: 100vh
 }
 
 .nav-wrapper, .dropdown-content {
@@ -169,6 +177,10 @@ h3 {
 
 .input-field label {
   color: #000;
+}
+
+.slider-wrapper {
+  min-height: 100vh;
 }
 
 .contact-head {
