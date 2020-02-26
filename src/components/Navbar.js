@@ -6,7 +6,7 @@ function Navbar(props) {
     return (
 
         <div className="navbar-fixed">
-            <ul id="dropdown1" className="dropdown-content">
+            {/* <ul id="dropdown1" className="dropdown-content">
                 <li><a href="#!" className="waves-effect waves-purple white-text">About Me</a></li>
                 <li className="divider"></li>
                 <li><a href="#!" className="waves-effect waves-purple white-text">Portfolio</a></li>
@@ -15,7 +15,7 @@ function Navbar(props) {
                 <li className="divider"></li>
                 <li><a href="#!"
                     className="waves-effect waves-purple white-text" target="_blank">Resume</a></li>
-            </ul>
+            </ul> */}
             <nav>
                 <div className="nav-wrapper black z-depth-3">
                     <a href="#!" onClick={() => props.handlePageChange("About")} className="brand-logo center" id="nav-logo">Jeff Greco</a>
@@ -46,30 +46,22 @@ function Navbar(props) {
                                 onOpenStart: null,
                                 outDuration: 250
                             }}
-                            trigger={<Button node="button" id="dropdown">Menu</Button>}
+                            trigger={<a href="#!" node="button" id="dropdown" >Menu
+                            <i className="material-icons right">arrow_drop_down</i>
+                            </a>}
                         >
-                            <a href="#">
-                                one
-  </a>
-                            <a href="#">
-                                two
-  </a>
+                            <a href="#!" onClick={() => props.handlePageChange("About")} className="waves-effect waves-purple white-text">
+                                About</a>
                             <Divider />
-                            <a href="#">
-                                three
-  </a>
-                            <a href="#">
-                                <Icon>
-                                    view_module
-    </Icon>
-                                four
-  </a>
-                            <a href="#">
-                                <Icon>
-                                    cloud
-    </Icon>
-                                {' '}five
-  </a>
+                            <a href="#!" onClick={() => props.handlePageChange("Contact")} lassName="waves-effect waves-purple white-text">
+                                Contact</a>
+                            <Divider />
+                            <a href="#!" onClick={() => props.handlePageChange("Portfolio")} className="waves-effect waves-purple white-text">
+                                Portfolio</a>
+                            <Divider />
+                            <a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" target="_blank" rel="noopener noreferrer" className="waves-effect waves-purple white-text">
+                                Resume</a>
+                            <Divider />
                         </Dropdown>
                     </ul>
 
