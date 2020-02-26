@@ -36,16 +36,17 @@ function Navbar(props) {
                             </a>}
                         >
                             <a href="#!" onClick={() => props.handlePageChange("About")} className="waves-effect waves-purple white-text">
-                                About <Divider /> </a>
-                            
+                                About</a>
+                                <Divider />
                             <a href="#!" onClick={() => props.handlePageChange("Contact")} className="waves-effect waves-purple white-text">
-                                Contact <Divider /> </a>
-                            
+                                Contact</a>
+                                <Divider />
                             <a href="#!" onClick={() => props.handlePageChange("Portfolio")} className="waves-effect waves-purple white-text">
-                                Portfolio <Divider /> </a>
-                           
+                                Portfolio</a>
+                                <Divider />
                             <a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" target="_blank" rel="noopener noreferrer" className="waves-effect waves-purple white-text">
-                                Resume <Divider /> </a>
+                                Resume</a>
+                                <Divider />
                         </Dropdown>
                     </ul>
                 </div>
