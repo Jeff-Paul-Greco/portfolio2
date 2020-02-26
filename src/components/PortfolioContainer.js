@@ -28,7 +28,9 @@ class PortfolioContainer extends Component {
     render() {
       return (
         <div>
-          <Navbar/>
+          <Navbar
+          handlePageChange={this.handlePageChange}
+          />
           {this.renderPage()}
         </div>
       );
