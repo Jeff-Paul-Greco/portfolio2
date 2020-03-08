@@ -1,7 +1,6 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import Modal from "../Modal"
 
 import CustomCorner from "../../images/custom-corner.PNG"
 import GoogleBooks from "../../images/google-books.PNG"
@@ -33,79 +32,79 @@ function Portfolio(props) {
                 transitionTime={3000}
             >
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="custom-corner">
+                    <div index="0">
                         <img src={CustomCorner} alt="custom-corner" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="google-books">
+                    <div index="1">
                         <img src={GoogleBooks} alt="google-books" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="scraper">
+                    <div index="2">
                         <img src={Scraper} alt="scraper" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="clicky">
+                    <div index="clicky">
                         <img src={Clicky} alt="clicky" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="trivia">
+                    <div index="trivia">
                         <img src={Trivia} alt="trivia" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="house-party">
+                    <div index="house-party">
                         <img src={HouseParty} alt="house-party" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="doomsday">
+                    <div index="doomsday">
                         <img src={Doomsday} alt="doomsday" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="train">
+                    <div index="train">
                         <img src={Train} alt="train" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="friend">
+                    <div index="friend">
                         <img src={Friend} alt="friend" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="burger">
+                    <div index="burger">
                         <img src={Burger} alt="burger" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger"  onClick={(event) => props.handleClickProject(event)}>
-                    <div id="liri">
+                    <div index="liri">
                         <img src={Liri} alt="liri" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="bamazon">
+                    <div index="bamazon">
                         <img src={Bamazon} alt="bamazon" />
                     </div>
                 </a>
 
             </Carousel>
-            <Modal />
+            
         </div>
     );
 };

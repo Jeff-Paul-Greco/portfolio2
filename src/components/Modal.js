@@ -1,36 +1,41 @@
-import React from "react";
+import React, { Component } from "react";
 import { Modal, Button } from 'react-materialize';
 
-function projectModal(props) {
-    return (
-        <Modal
-            actions={[
-                <Button flat modal="close" node="button" waves="green">Close</Button>
-            ]}
-            bottomSheet={false}
-            fixedFooter={false}
-            header="Modal Header"
-            id="modal-0"
-            options={{
-                dismissible: true,
-                endingTop: '10%',
-                inDuration: 250,
-                onCloseEnd: null,
-                onCloseStart: null,
-                onOpenEnd: null,
-                onOpenStart: null,
-                opacity: 0.5,
-                outDuration: 250,
-                preventScrolling: true,
-                startingTop: '4%'
-            }}
-            // trigger={<Button node="button">MODAL</Button>}
-        >
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-  </p>
-        </Modal>
-    )
+class projectModal extends Component {
+
+    
+
+    render() {
+        return (
+            <Modal
+                actions={[
+                    <div>
+                        <Button className="modal-close waves-effect waves-purple btn light-blue text-black">Close</Button>
+                        <Button className="modal-close waves-effect waves-purple btn light-blue text-black">Close</Button>
+                    </div>
+                ]}
+                bottomSheet={false}
+                fixedFooter={false}
+                header="header"
+                id="modal-0"
+                options={{
+                    dismissible: true,
+                    endingTop: '10%',
+                    inDuration: 250,
+                    onCloseEnd: null,
+                    onCloseStart: null,
+                    onOpenEnd: null,
+                    onOpenStart: null,
+                    opacity: 0.5,
+                    outDuration: 250,
+                    preventScrolling: true,
+                    startingTop: '4%'
+                }}
+            >
+                <p>stuff</p>
+            </Modal>
+        )
+    }
 }
 
 export default projectModal;
