@@ -10,10 +10,8 @@ import Trivia from "../../images/trivia.png"
 import Doomsday from "../../images/doomsday.png"
 import HouseParty from "../../images/house-party.png"
 import Train from "../../images/train.png"
-import Friend from "../../images/friend-finder.png"
 import Burger from "../../images/burger.png"
 import Liri from "../../images/liri.png"
-import Bamazon from "../../images/bamazon.png"
 
 function Portfolio(props) {
 
@@ -32,74 +30,62 @@ function Portfolio(props) {
                 transitionTime={3000}
             >
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="0">
+                    <div id="customCorner">
                         <img src={CustomCorner} alt="custom-corner" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="1">
+                    <div id="googleBooks">
                         <img src={GoogleBooks} alt="google-books" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="2">
+                    <div id="scraper">
                         <img src={Scraper} alt="scraper" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="clicky">
+                    <div id="clicky">
                         <img src={Clicky} alt="clicky" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="trivia">
+                    <div id="trivia">
                         <img src={Trivia} alt="trivia" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="house-party">
+                    <div id="house-party">
                         <img src={HouseParty} alt="house-party" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="doomsday">
+                    <div id="doomsday">
                         <img src={Doomsday} alt="doomsday" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="train">
+                    <div id="train">
                         <img src={Train} alt="train" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="friend">
-                        <img src={Friend} alt="friend" />
-                    </div>
-                </a>
-
-                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="burger">
+                    <div id="burger">
                         <img src={Burger} alt="burger" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger"  onClick={(event) => props.handleClickProject(event)}>
-                    <div index="liri">
+                    <div id="liri">
                         <img src={Liri} alt="liri" />
-                    </div>
-                </a>
-
-                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div index="bamazon">
-                        <img src={Bamazon} alt="bamazon" />
                     </div>
                 </a>
 
