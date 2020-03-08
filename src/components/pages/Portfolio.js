@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import Modal from "../Modal"
 
 import CustomCorner from "../../images/custom-corner.PNG"
 import GoogleBooks from "../../images/google-books.PNG"
@@ -15,62 +16,98 @@ import Burger from "../../images/burger.png"
 import Liri from "../../images/liri.png"
 import Bamazon from "../../images/bamazon.png"
 
-class Portfolio extends Component {
-    render() {
-        return (
-            <div className="portfolio-wrapper">
-                <Carousel
-                    showIndicators={true}
-                    showStatus={false}
-                    showThumbs={false}
-                    height={"100%"}
-                    axis={"horizontal"}
-                    infiniteLoop={true}
-                    labels={{leftArrow: "prev"}}
-                    autoPlay={true}
-                    interval={6000}
-                    transitionTime={3000}
-                >
-                    <div>
+function Portfolio(props) {
+
+    return (
+        <div className="portfolio-wrapper">
+            <Carousel
+                showIndicators={true}
+                showStatus={false}
+                showThumbs={false}
+                height={"100%"}
+                axis={"horizontal"}
+                infiniteLoop={true}
+                labels={{ leftArrow: "prev" }}
+                autoPlay={true}
+                interval={6000}
+                transitionTime={3000}
+            >
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="custom-corner">
                         <img src={CustomCorner} alt="custom-corner" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="google-books">
                         <img src={GoogleBooks} alt="google-books" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="scraper">
                         <img src={Scraper} alt="scraper" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="clicky">
                         <img src={Clicky} alt="clicky" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="trivia">
                         <img src={Trivia} alt="trivia" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="house-party">
                         <img src={HouseParty} alt="house-party" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="doomsday">
                         <img src={Doomsday} alt="doomsday" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="train">
                         <img src={Train} alt="train" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="friend">
                         <img src={Friend} alt="friend" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="burger">
                         <img src={Burger} alt="burger" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger"  onClick={(event) => props.handleClickProject(event)}>
+                    <div id="liri">
                         <img src={Liri} alt="liri" />
                     </div>
-                    <div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="bamazon">
                         <img src={Bamazon} alt="bamazon" />
                     </div>
-                </Carousel>
-            </div>
-        );
-    }
+                </a>
+
+            </Carousel>
+            <Modal />
+        </div>
+    );
 };
 
 export default Portfolio

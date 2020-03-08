@@ -7,38 +7,49 @@ import Footer from "./Footer";
 import Modal from "./Modal";
 
 class PortfolioContainer extends Component {
-    state = {
-      currentPage: ""
-    };
+  state = {
+    currentPage: "",
+    currentProject: ""
+  };
 
-    componentDidMount = () => this.setState({ currentPage: "About" });
-  
-    handlePageChange = page => {
-      this.setState({ currentPage: page });
-    };
-  
-    renderPage = () => {
-      if (this.state.currentPage === "About") {
-        return <About />;
-      } else if (this.state.currentPage === "Portfolio") {
-        return <Portfolio />;
-      } else if (this.state.currentPage === "Contact") {
-        return <Contact />;
-      } 
-    };
-  
-    render() {
-      return (
-        <div>
-          <Navbar
-          handlePageChange={this.handlePageChange}
-          />
-          {this.renderPage()}
-          <Modal/>
-          <Footer/>
-        </div>
-      );
+  componentDidMount = () => this.setState({ currentPage: "About" });
+
+  handlePageChange = page => {
+    this.setState({ currentPage: page });
+    console.log(this.state)
+  };
+
+  handleClickProject = event => {
+    event.preventDefault()
+    let selected = event.target.id
+    console.log(selected)
+    this.setState({ currentProject: selected });
+  };
+
+  renderPage = () => {
+    if (this.state.currentPage === "About") {
+      return <About />;
+    } else if (this.state.currentPage === "Portfolio") {
+      return <Portfolio
+        handleClickProject={this.handleClickProject}
+      />;
+    } else if (this.state.currentPage === "Contact") {
+      return <Contact />;
     }
-  }
+  };
 
-  export default PortfolioContainer;
+  render() {
+    return (
+      <div>
+        <Navbar
+          handlePageChange={this.handlePageChange}
+        />
+        {this.renderPage()}
+        <Modal />
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default PortfolioContainer;

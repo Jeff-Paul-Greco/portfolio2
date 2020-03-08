@@ -78,20 +78,20 @@ class Contact extends Component {
                                     <div className="row" id="skills-list">
                                         <div className="col m6 center">
                                             <ul className="skill-list-col">
-                                                <li><i class="material-icons">chevron_right</i>Javascript</li>
-                                                <li><i class="material-icons">chevron_right</i>React</li>
-                                                <li><i class="material-icons">chevron_right</i>MySQL</li>
-                                                <li><i class="material-icons">chevron_right</i>MongoDB</li>
-                                                <li><i class="material-icons">chevron_right</i>Node.js</li>
+                                                <li><i className="material-icons">chevron_right</i>Javascript</li>
+                                                <li><i className="material-icons">chevron_right</i>React</li>
+                                                <li><i className="material-icons">chevron_right</i>MySQL</li>
+                                                <li><i className="material-icons">chevron_right</i>MongoDB</li>
+                                                <li><i className="material-icons">chevron_right</i>Node.js</li>
                                             </ul>
                                         </div>
                                         <div className="col m6 center">
                                             <ul className="skill-list-col">
-                                                <li><i class="material-icons">chevron_right</i>HTML</li>
-                                                <li><i class="material-icons">chevron_right</i>CSS</li>
-                                                <li><i class="material-icons">chevron_right</i>Bootstrap</li>
-                                                <li><i class="material-icons">chevron_right</i>Materialize</li>
-                                                <li><i class="material-icons">chevron_right</i>CSS Grid</li>
+                                                <li><i className="material-icons">chevron_right</i>HTML</li>
+                                                <li><i className="material-icons">chevron_right</i>CSS</li>
+                                                <li><i className="material-icons">chevron_right</i>Bootstrap</li>
+                                                <li><i className="material-icons">chevron_right</i>Materialize</li>
+                                                <li><i className="material-icons">chevron_right</i>CSS Grid</li>
                                             </ul>
                                         </div>
                                     </div>
