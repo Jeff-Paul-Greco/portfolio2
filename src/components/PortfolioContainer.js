@@ -9,7 +9,10 @@ import Modal from "./Modal";
 class PortfolioContainer extends Component {
   state = {
     currentPage: "",
-    currentProject: ""
+    currentProject: "",
+    currentDescription: "",
+    button1: [],
+    button2: []
   };
 
   componentDidMount = () => this.setState({ currentPage: "About" });
@@ -23,7 +26,47 @@ class PortfolioContainer extends Component {
     event.preventDefault()
     let selected = event.target.id
     console.log(selected)
-    this.setState({ currentProject: selected });
+    switch (selected) {
+      case "custom-corner":
+        this.setState({ currentProject: "Custom Corner Demo" });
+        this.setState({ currentDescription: "Custom Corner is a Full MERN Stack site developed for an interior design client. The app aggregates furniture from various vendors and allows the user to save and stage furniture for various seperate clients as well as pin saved furniture from a client's tackboard to Pinterest.com. The code is proprietary and user accounts are closed to the public, so a demo site has been linked below which displays the app's functionality." })
+        this.setState({ button1: ["https://jeff-paul-greco.github.io/Custom-Corner-Demo/", "Demo Site"] });
+        this.setState({ button2: ["https://custom-corner.com/", "Site"] });
+        break;
+      case "google-books":
+        this.setState({ currentProject: "React Book Search" });
+        this.setState({ currentDescription: "Full MERN Stack app that searches Google Books' API and saves searched books to a favorites list!" })
+        this.setState({ button1: ["https://cryptic-dawn-75768.herokuapp.com/", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/google-books-search", "Code"] });
+        break;
+      case "scraper":
+        this.setState({ currentProject: "Mongo Web Scraper" });
+        this.setState({ currentDescription: "Scrape and save articles from Eventhubs.com and save them with MongoDB!" })
+        this.setState({ button1: ["https://arcane-reef-76455.herokuapp.com/", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/scraper", "Code"] });
+        break;
+      case "clicky":
+        this.setState({ currentProject: "React Memory Game" });
+        this.setState({ currentDescription: "A memory game using React. Try not to click the same image twice!" })
+        this.setState({ button1: ["https://jeff-paul-greco.github.io/clicky-game", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/clicky-game", "Code"] });
+        break;
+        case "trivia":
+        this.setState({ currentProject: "Trivia Game" });
+        this.setState({ currentDescription: "Try to answer all of the questions before the time runs out!" })
+        this.setState({ button1: ["https://jeff-paul-greco.github.io/Trivia-Game", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/Trivia-Game", "Code"] });
+        break;
+        case "house-party":
+        this.setState({ currentProject: "House Party" });
+        this.setState({ currentDescription: "Try to answer all of the questions before the time runs out!" })
+        this.setState({ button1: ["https://jeff-paul-greco.github.io/project1", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/project1", "Code"] });
+        break;
+      default:
+        break;
+    }
+
   };
 
   renderPage = () => {
@@ -45,9 +88,11 @@ class PortfolioContainer extends Component {
           handlePageChange={this.handlePageChange}
         />
         {this.renderPage()}
-        <Modal 
+        <Modal
           name={this.state.currentProject}
-          test="hello"
+          description={this.state.currentDescription}
+          button1={this.state.button1}
+          button2={this.state.button2}
         />
         <Footer />
       </div>

@@ -30,13 +30,13 @@ function Portfolio(props) {
                 transitionTime={3000}
             >
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="customCorner">
+                    <div id="custom-corner">
                         <img src={CustomCorner} alt="custom-corner" />
                     </div>
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="googleBooks">
+                    <div id="google-books">
                         <img src={GoogleBooks} alt="google-books" />
                     </div>
                 </a>
