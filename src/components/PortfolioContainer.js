@@ -63,6 +63,24 @@ class PortfolioContainer extends Component {
         this.setState({ button1: ["https://jeff-paul-greco.github.io/project1", "Site"] });
         this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/project1", "Code"] });
         break;
+        case "train":
+        this.setState({ currentProject: "Train Scheduler" });
+        this.setState({ currentDescription: "Pick a train route, it's starting time, and the frequency with which it runs, and keep track of upcoming schedules!" })
+        this.setState({ button1: ["https://jeff-paul-greco.github.io/train-scheduler", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/train-scheduler", "Code"] });
+        break;
+        case "burger":
+        this.setState({ currentProject: "Eat Da Burger" });
+        this.setState({ currentDescription: "This site utilizes express handlebars and MySQL to keep track of which burgers you have eaten. You can even add your own!" })
+        this.setState({ button1: ["https://pure-beach-62697.herokuapp.com", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/burger", "Code"] });
+        break;
+        case "liri":
+        this.setState({ currentProject: "Liri Node App" });
+        this.setState({ currentDescription: "This Node app utilizes a variety of APIs. Liri - the Language Interpretation and Recognition Interface!" })
+        this.setState({ button1: ["https://github.com/Jeff-Paul-Greco/liri-node-app", "Code"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/liri-node-app", "Info"] });
+        break;
       default:
         break;
     }

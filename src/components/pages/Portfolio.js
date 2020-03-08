@@ -66,12 +66,6 @@ function Portfolio(props) {
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="doomsday">
-                        <img src={Doomsday} alt="doomsday" />
-                    </div>
-                </a>
-
-                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
                     <div id="train">
                         <img src={Train} alt="train" />
                     </div>
