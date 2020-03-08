@@ -57,13 +57,42 @@ p {
   text-align: center;
 }
 
-#pic-text, #contact-text {
+#pic-text, #contact-text, #skills {
   font-family: 'IM Fell English SC', serif;
   font-size: 55px;
 }
 
 #pic-text {
   padding: 0px 0px 45px 60px;
+}
+
+#skills-list {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#elim-padding {
+  padding: 0px 0px;
+}
+
+#links-card {
+  margin-bottom: 10px;
+}
+
+.skill-list-col {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#skill-card {
+  margin-top: 0px;
+}
+
+#contact-links, #skills-list {
+  margin-bottom: 0px;
 }
 
 .dropdown-trigger {

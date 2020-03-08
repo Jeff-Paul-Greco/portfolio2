@@ -1,5 +1,8 @@
 import React from "react";
 import { Dropdown, Divider } from 'react-materialize';
+import Portfolio from "./pages/Portfolio"
+import Contact from "./pages/Contact"
+import About from "./pages/About"
 
 function Navbar(props) {
 
@@ -61,8 +64,19 @@ function Navbar(props) {
                         </Dropdown>
                     </ul>
                 </div>
+
+                {/* Pre-rendering of Portfolio/Contact upon initial page load */}
+                <div id="hidden">
+                    <Portfolio />
+                    <Contact />
+                    <About />
+                </div>
+
             </nav>
+
         </div>
+
+        
     );
 
 }

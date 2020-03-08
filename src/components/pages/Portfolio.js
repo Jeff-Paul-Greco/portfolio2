@@ -26,6 +26,10 @@ class Portfolio extends Component {
                     height={"100%"}
                     axis={"horizontal"}
                     infiniteLoop={true}
+                    labels={{leftArrow: "prev"}}
+                    autoPlay={true}
+                    interval={6000}
+                    transitionTime={3000}
                 >
                     <div>
                         <img src={CustomCorner} alt="custom-corner" />

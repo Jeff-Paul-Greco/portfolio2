@@ -4,6 +4,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Modal from "./Modal";
 
 class PortfolioContainer extends Component {
     state = {
@@ -33,6 +34,7 @@ class PortfolioContainer extends Component {
           handlePageChange={this.handlePageChange}
           />
           {this.renderPage()}
+          <Modal/>
           <Footer/>
         </div>
       );

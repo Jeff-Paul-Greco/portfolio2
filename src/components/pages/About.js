@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Pic from "../../images/pic.png"
-import Portfolio from "./Portfolio"
 
 class About extends Component {
 
@@ -30,11 +29,6 @@ class About extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-
-                {/* Pre-rendering of Portfolio upon initial page load */}
-                <div id="hidden">
-                    <Portfolio />
                 </div>
 
             </div>

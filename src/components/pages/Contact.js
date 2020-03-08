@@ -52,19 +52,50 @@ class Contact extends Component {
                     </div>
 
                     <div className="col m5 center">
-                        <div className="card z-depth-5">
-                            <div className="card-content black-text">
-                                <span className="card-title" id="phone">(704)604-9105</span>
+                        <div className="row" id="contact-links">
+                            <div className="card z-depth-5" id="links-card">
+                                <div className="card-content black-text">
+                                    <span className="card-title" id="phone">(704)604-9105</span>
+                                </div>
+                                <div className="card-action" id="icons">
+                                    <a href="mailto:jeffpgreco@gmail.com" target="_top"><img src={Email}
+                                        className="icon" alt="email" /></a>
+                                    <a href="https://github.com/Jeff-Paul-Greco" rel="noopener noreferrer" target="_blank"><img src={Github}
+                                        className="icon" alt="github" /></a>
+                                    <a href="https://www.linkedin.com/in/jeff-greco-019a28189" rel="noopener noreferrer" target="_blank"><img
+                                        src={Linkedin} className="icon" alt="linkedin" /></a>
+                                    <a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" rel="noopener noreferrer"
+                                        target="_blank"><img src={Resume} className="icon" alt="resume" id="last-icon" /></a>
+                                </div>
                             </div>
-                            <div className="card-action" id="icons">
-                                <a href="mailto:jeffpgreco@gmail.com" target="_top"><img src={Email}
-                                    className="icon" alt="email" /></a>
-                                <a href="https://github.com/Jeff-Paul-Greco" rel="noopener noreferrer" target="_blank"><img src={Github}
-                                    className="icon" alt="github" /></a>
-                                <a href="https://www.linkedin.com/in/jeff-greco-019a28189" rel="noopener noreferrer" target="_blank"><img
-                                    src={Linkedin} className="icon" alt="linkedin" /></a>
-                                <a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" rel="noopener noreferrer"
-                                    target="_blank"><img src={Resume} className="icon" alt="resume" id="last-icon" /></a>
+                        </div>
+                        <div className="row">
+                            <div className="card z-depth-5" id="skill-card">
+                                <div className="card-content black-text">
+                                    <span className="card-title" id="skills">Skills</span>
+                                </div>
+                                <div className="card-action" id="elim-padding">
+                                    <div className="row" id="skills-list">
+                                        <div className="col m6 center">
+                                            <ul className="skill-list-col">
+                                                <li><i class="material-icons">chevron_right</i>Javascript</li>
+                                                <li><i class="material-icons">chevron_right</i>React</li>
+                                                <li><i class="material-icons">chevron_right</i>MySQL</li>
+                                                <li><i class="material-icons">chevron_right</i>MongoDB</li>
+                                                <li><i class="material-icons">chevron_right</i>Node.js</li>
+                                            </ul>
+                                        </div>
+                                        <div className="col m6 center">
+                                            <ul className="skill-list-col">
+                                                <li><i class="material-icons">chevron_right</i>HTML</li>
+                                                <li><i class="material-icons">chevron_right</i>CSS</li>
+                                                <li><i class="material-icons">chevron_right</i>Bootstrap</li>
+                                                <li><i class="material-icons">chevron_right</i>Materialize</li>
+                                                <li><i class="material-icons">chevron_right</i>CSS Grid</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
