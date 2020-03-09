@@ -1,12 +1,41 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
-const routes = require("./routes")
-
+const routes = require("./routes");
+const nodemailer = require("nodemailer");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose")
 
+// Nodemailer middleware
+let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
+    },
+    tls: {
+        rejectUnauthorized: false
+    }
+});
+
+// Configure mailer options
+let mailOptions = {
+    from: "jeffpgreco@gmail.com",
+    to: "jeffpgreco@gmail.com",
+    subject: "I hope I have a future...",
+    text: "Llardian"
+};
+
+// Send mail
+transporter.sendMail(mailOptions, function(err, data) {
+    if (err) {
+        console.log("Error friend", err);
+    } else {
+        console.log("Have future!");
+    }
+});
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
