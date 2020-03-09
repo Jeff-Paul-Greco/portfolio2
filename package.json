@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lit-peak-17240.herokuapp.com/",
   "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,7 +9,6 @@
     "@testing-library/user-event": "^7.1.2",
     "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
-    "gh-pages": "^2.2.0",
     "if-env": "^1.0.4",
     "mongoose": "^5.9.3",
     "nodemailer": "^6.4.4",
@@ -34,19 +32,10 @@
     "npm": "6.9.0",
     "node": "10.16.0"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
   }
 }
