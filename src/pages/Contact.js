@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Email from "../../images/email.png";
-import Github from "../../images/github.png";
-import Resume from "../../images/resume.png";
-import Linkedin from "../../images/linkedin.png";
+import Email from "../images/email.png";
+import Github from "../images/github.png";
+import Resume from "../images/resume.png";
+import Linkedin from "../images/linkedin.png";
 
 class Contact extends Component {
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Portfolio from "../pages/Portfolio";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Modal from "./Modal";

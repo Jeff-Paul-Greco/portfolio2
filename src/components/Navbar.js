@@ -1,8 +1,8 @@
 import React from "react";
 import { Dropdown, Divider } from 'react-materialize';
-import Portfolio from "./pages/Portfolio"
-import Contact from "./pages/Contact"
-import About from "./pages/About"
+import Portfolio from "../pages/Portfolio"
+import Contact from "../pages/Contact"
+import About from "../pages/About"
 
 function Navbar(props) {
 

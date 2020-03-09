@@ -2,16 +2,15 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import CustomCorner from "../../images/custom-corner.PNG"
-import GoogleBooks from "../../images/google-books.PNG"
-import Scraper from "../../images/scraper.PNG"
-import Clicky from "../../images/clicky.PNG"
-import Trivia from "../../images/trivia.png"
-import Doomsday from "../../images/doomsday.png"
-import HouseParty from "../../images/house-party.png"
-import Train from "../../images/train.png"
-import Burger from "../../images/burger.png"
-import Liri from "../../images/liri.png"
+import CustomCorner from "../images/custom-corner.PNG"
+import GoogleBooks from "../images/google-books.PNG"
+import Scraper from "../images/scraper.PNG"
+import Clicky from "../images/clicky.PNG"
+import Trivia from "../images/trivia.png"
+import HouseParty from "../images/house-party.png"
+import Train from "../images/train.png"
+import Burger from "../images/burger.png"
+import Liri from "../images/liri.png"
 
 function Portfolio(props) {
 
