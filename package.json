@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://lit-peak-17240.herokuapp.com/",
+  "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
     "gh-pages": "^2.2.0",
+    "if-env": "^1.0.4",
     "mongoose": "^5.9.3",
     "nodemailer": "^6.4.4",
     "react": "^16.12.0",
@@ -19,12 +22,13 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "npm": "6.9.0",

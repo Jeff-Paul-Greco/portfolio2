@@ -17,8 +17,7 @@ let transporter = nodemailer.createTransport({
     },
     tls: {
         rejectUnauthorized: false
-    },
-    protocol: window.location.protocol === 'https:' ? 'wss' : 'ws'
+    }
 });
 
 // Configure mailer options
