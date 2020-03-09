@@ -1,8 +1,8 @@
 {
-  "name": "portfolio2",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jeff-paul-greco.github.io/portfolio2",
+  "homepage": "https://lit-peak-17240.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
