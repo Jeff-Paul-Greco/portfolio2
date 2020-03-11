@@ -34,9 +34,8 @@ mongoose.connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true 
 
 app.post("/api/sendMail", (req, res) => {
     console.log(req.body)
-
-    sendEmail(req.body.firstName, req.body.lastName, req.body.email, req.body.message)
     alert("message sent to jeffpgreco@gmail.com");
+    sendEmail(req.body.firstName, req.body.lastName, req.body.email, req.body.message)
 });
 
 // Send every other request to the React app
