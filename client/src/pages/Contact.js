@@ -32,6 +32,11 @@ class Contact extends Component {
                 this.setState({ message: event.target.value })
                 break;
             default:
+                this.setState({ firstName: "" })
+                this.setState({ lastName: "" })
+                this.setState({ email: "" })
+                this.setState({ message: "" })
+        
             break;
         }
     };
@@ -47,11 +52,13 @@ class Contact extends Component {
         }
         console.log(dataToSubmit)
         alert("message sent to jeffpgreco@gmail.com");
+        
+        axios.post("/api/sendMail", dataToSubmit)
+
         this.setState({ firstName: "" })
         this.setState({ lastName: "" })
         this.setState({ email: "" })
         this.setState({ message: "" })
-        axios.post("/api/sendMail", dataToSubmit)
         
     };
 
