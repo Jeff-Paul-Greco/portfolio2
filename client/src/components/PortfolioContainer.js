@@ -19,7 +19,6 @@ class PortfolioContainer extends Component {
 
   handlePageChange = page => {
     this.setState({ currentPage: page });
-    console.log(this.state)
   };
 
   handleClickProject = event => {

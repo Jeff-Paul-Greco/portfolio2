@@ -3,6 +3,7 @@ import Email from "../images/email.png";
 import Github from "../images/github.png";
 import Resume from "../images/resume.png";
 import Linkedin from "../images/linkedin.png";
+import axios from "axios";
 
 
 class Contact extends Component {
@@ -45,6 +46,8 @@ class Contact extends Component {
             message: this.state.message
         }
         console.log(dataToSubmit)
+
+        axios.post("/api/sendMail", dataToSubmit)
     };
 
     render() {

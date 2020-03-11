@@ -20,9 +20,9 @@ let transporter = nodemailer.createTransport({
 let mailOptions = {
     from: "jeffpgreco@gmail.com",
     to: "jeffpgreco@gmail.com",
-    subject: `A message from ${firstName + lastName}`,
+    subject: `A message from ${firstName} ${lastName}`,
     text: `
-    email: ${email}
+    from: ${email}
     
     message: ${message}`
 };
@@ -38,4 +38,4 @@ transporter.sendMail(mailOptions, function(err, data) {
 
 }
 
-export default sendEmail;
+module.exports = sendEmail;
