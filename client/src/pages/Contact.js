@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import API from "../utils/API";
 import Email from "../images/email.png";
 import Github from "../images/github.png";
 import Resume from "../images/resume.png";
@@ -17,20 +16,19 @@ class Contact extends Component {
 
     handleClick = event => {
         event.preventDefault();
-        console.log(event.target)
         let selected = event.target.id;
         switch (selected) {
             case "firstName":
-                this.setState({ firstName })
+                this.setState({ firstName: event.target.value })
                 break;
             case "lastName":
-                this.setState({ lastName })
+                this.setState({ lastName: event.target.value })
                 break;
             case "email":
-                this.setState({ email })
+                this.setState({ email: event.target.value })
                 break;
             case "message":
-                this.setState({ message })
+                this.setState({ message: event.target.value })
                 break;
             default:
             break;
@@ -41,14 +39,12 @@ class Contact extends Component {
         event.preventDefault();
 
         let dataToSubmit = {
-            firstName,
-            lastName,
-            email,
-            message
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            message: this.state.message
         }
-        API.saveMessage(dataToSubmit)
-            .then(res => alert("message sent!"))
-            .catch(err => console.log(err), alert("message failed to send"))
+        console.log(dataToSubmit)
     };
 
     render() {
@@ -62,34 +58,34 @@ class Contact extends Component {
 
                             <div className="card-content">
                                 <div className="row">
-                                    <form className="col m12" onSubmit={handleSubmit}>
+                                    <form className="col m12" onSubmit={this.handleSubmit}>
                                         <div className="row contact-head">
                                             <span className="card-title" id="contact-text">Contact</span>
                                         </div>
                                         <div className="row">
                                             <div className="input-field col m6">
-                                                <input id="firstName" type="text" value={firstName} onChange={handleClick} className="validate" />
+                                                <input id="firstName" type="text" value={this.statefirstName} onChange={this.handleClick} />
                                                 <label htmlFor="firstName">First Name</label>
                                             </div>
                                             <div className="input-field col m6">
-                                                <input id="lastName" type="text" value={lastName} onChange={handleClick} className="validate" />
+                                                <input id="lastName" type="text" value={this.state.lastName} onChange={this.handleClick} />
                                                 <label htmlFor="lastName">Last Name</label>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="input-field col m12">
-                                                <input id="email" type="email" value={email} onChange={handleClick} className="validate" />
+                                                <input id="email" type="email" value={this.state.email} onChange={this.handleClick} />
                                                 <label htmlFor="email">Email</label>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="input-field col m12">
-                                                <textarea id="message" value={message} onChange={handleClick} className="materialize-textarea"></textarea>
+                                                <textarea id="message" value={this.state.message} onChange={this.handleClick} className="materialize-textarea"></textarea>
                                                 <label htmlFor="message">Message</label>
                                             </div>
                                         </div>
                                         <button className="btn waves-effect waves-purple light-blue black-text darken-text-2"
-                                            id="submit" onClick={handleSubmit}>submit</button>
+                                            id="submit" onClick={this.handleSubmit}>submit</button>
                                     </form>
                                 </div>
                             </div>

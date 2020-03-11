@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 
 const MessageSchema = new Schema({
 
-    sender: String,
+    firstName: String,
+    lastName: String,
     email: String,
     message: String
 
