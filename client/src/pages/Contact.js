@@ -1,10 +1,55 @@
 import React, { Component } from "react";
+import API from "../utils/API";
 import Email from "../images/email.png";
 import Github from "../images/github.png";
 import Resume from "../images/resume.png";
 import Linkedin from "../images/linkedin.png";
 
+
 class Contact extends Component {
+
+    state = {
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: ""
+    }
+
+    handleClick = event => {
+        event.preventDefault();
+        console.log(event.target)
+        let selected = event.target.id;
+        switch (selected) {
+            case "firstName":
+                this.setState({ firstName })
+                break;
+            case "lastName":
+                this.setState({ lastName })
+                break;
+            case "email":
+                this.setState({ email })
+                break;
+            case "message":
+                this.setState({ message })
+                break;
+            default:
+            break;
+        }
+    };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
+        let dataToSubmit = {
+            firstName,
+            lastName,
+            email,
+            message
+        }
+        API.saveMessage(dataToSubmit)
+            .then(res => alert("message sent!"))
+            .catch(err => console.log(err), alert("message failed to send"))
+    };
 
     render() {
 
@@ -17,34 +62,34 @@ class Contact extends Component {
 
                             <div className="card-content">
                                 <div className="row">
-                                    <form className="col m12">
+                                    <form className="col m12" onSubmit={handleSubmit}>
                                         <div className="row contact-head">
                                             <span className="card-title" id="contact-text">Contact</span>
                                         </div>
                                         <div className="row">
                                             <div className="input-field col m6">
-                                                <input id="first_name" type="text" className="validate" />
-                                                <label htmlFor="first_name">First Name</label>
+                                                <input id="firstName" type="text" value={firstName} onChange={handleClick} className="validate" />
+                                                <label htmlFor="firstName">First Name</label>
                                             </div>
                                             <div className="input-field col m6">
-                                                <input id="last_name" type="text" className="validate" />
-                                                <label htmlFor="last_name">Last Name</label>
+                                                <input id="lastName" type="text" value={lastName} onChange={handleClick} className="validate" />
+                                                <label htmlFor="lastName">Last Name</label>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="input-field col m12">
-                                                <input id="email" type="email" className="validate" />
+                                                <input id="email" type="email" value={email} onChange={handleClick} className="validate" />
                                                 <label htmlFor="email">Email</label>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="input-field col m12">
-                                                <textarea id="textarea1" className="materialize-textarea"></textarea>
-                                                <label htmlFor="textarea1">Message</label>
+                                                <textarea id="message" value={message} onChange={handleClick} className="materialize-textarea"></textarea>
+                                                <label htmlFor="message">Message</label>
                                             </div>
                                         </div>
                                         <button className="btn waves-effect waves-purple light-blue black-text darken-text-2"
-                                            id="submit">submit</button>
+                                            id="submit" onClick={handleSubmit}>submit</button>
                                     </form>
                                 </div>
                             </div>
