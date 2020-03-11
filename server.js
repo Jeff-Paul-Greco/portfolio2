@@ -36,6 +36,7 @@ app.post("/api/sendMail", (req, res) => {
     console.log(req.body)
 
     sendEmail(req.body.firstName, req.body.lastName, req.body.email, req.body.message)
+    alert("message sent to jeffpgreco@gmail.com");
 });
 
 // Send every other request to the React app

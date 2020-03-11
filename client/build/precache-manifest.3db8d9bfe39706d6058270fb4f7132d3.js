@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/train.bb9fa346.png"
   },
   {
-    "revision": "891a81594e29059e912f",
-    "url": "/static/css/main.5fd32f97.chunk.css"
+    "revision": "49d4a4497ad485b5f4cd",
+    "url": "/static/css/main.e24fd6f5.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/static/media/custom-corner.9c162f59.PNG"
   },
   {
-    "revision": "9d31dd8359f5dc5bb529",
+    "revision": "15d556653380bf56af70",
     "url": "/static/js/2.28200754.chunk.js"
   },
   {
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/static/media/liri.5282759b.png"
   },
   {
-    "revision": "c78a6127bde93fc7b53b4cb836ef1b86",
-    "url": "/static/media/doomsday.c78a6127.png"
-  },
-  {
     "revision": "0d7a103ae636f7c53b0f04a74db14431",
     "url": "/static/media/background2.0d7a103a.png"
+  },
+  {
+    "revision": "c78a6127bde93fc7b53b4cb836ef1b86",
+    "url": "/static/media/doomsday.c78a6127.png"
   },
   {
     "revision": "4b7efd2f0aa55c646bc88ad4c51770dc",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/static/media/psychic.96101fec.png"
   },
   {
-    "revision": "891a81594e29059e912f",
-    "url": "/static/js/main.88c38973.chunk.js"
+    "revision": "49d4a4497ad485b5f4cd",
+    "url": "/static/js/main.981b954d.chunk.js"
   },
   {
     "revision": "f369cc07211014d75be4762381341e97",
@@ -92,11 +92,11 @@ self.__precacheManifest = [
     "url": "/static/media/email.da6dc03f.png"
   },
   {
-    "revision": "9d31dd8359f5dc5bb529",
-    "url": "/static/css/2.565ed421.chunk.css"
+    "revision": "15d556653380bf56af70",
+    "url": "/static/css/2.1c23087f.chunk.css"
   },
   {
-    "revision": "3aee48859e726c06ff844d906f53369a",
+    "revision": "f711df3f271ba93d318b12c01cb81549",
     "url": "/index.html"
   }
 ];
