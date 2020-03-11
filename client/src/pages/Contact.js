@@ -79,7 +79,7 @@ class Contact extends Component {
                                         </div>
                                         <div className="row">
                                             <div className="input-field col m6">
-                                                <input id="firstName" type="text" value={this.statefirstName} onChange={this.handleClick} />
+                                                <input id="firstName" type="text" value={this.state.firstName} onChange={this.handleClick} />
                                                 <label htmlFor="firstName">First Name</label>
                                             </div>
                                             <div className="input-field col m6">
