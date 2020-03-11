@@ -34,7 +34,7 @@ mongoose.connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true 
 
 app.post("/api/sendMail", (req, res) => {
     console.log(req.body)
-    alert("message sent to jeffpgreco@gmail.com");
+    
     sendEmail(req.body.firstName, req.body.lastName, req.body.email, req.body.message)
 });
 

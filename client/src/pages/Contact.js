@@ -46,8 +46,9 @@ class Contact extends Component {
             message: this.state.message
         }
         console.log(dataToSubmit)
-
+        alert("message sent to jeffpgreco@gmail.com");
         axios.post("/api/sendMail", dataToSubmit)
+        
     };
 
     render() {
