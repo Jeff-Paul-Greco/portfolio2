@@ -1,68 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Jeff Greco's Portfolio
 
-## Available Scripts
+Welcome to my portfolio page. This is a MERN stack app that also uses Nodemailer to send email messages from the site's contact form. This page is styled using Materialize CSS framework and React-Materialize, utilizes various google fonts, and has an overall intuitive, dynamic and responsive design. Various media queries were added to provide a readable and pleasing user experience on many different screen sizes. The website is divided into three sections: About Me, Portfolio and Contact.
 
-In the project directory, you can run:
+The About Me page is the index page that you are brought to upon loading the site. You can get back to it by clicking either the Jeff Greco logo on the navbar, the About button on the navbar in mobile view or on the dropdown menu located on the right hand side of the navbar in desktop view. The section has a blurb about me as well as a portrait photo.
 
-### `yarn start`
+The Portfolio page can be acessed by either clicking the portfolio button on the dropdown menu in desktop view, or by pressing the portfolio button directly on the navbar in mobile view. The Portfolio page is arranged in a carousel with each slider being a project I have completed. You can flip through my projects by using the buttons located below or by swiping left or right on a touch screen. Click on any project to be greeted by a modal with the project's name as well as links to either the deployed site or github repository.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The Contact page can be accessed by either clicking the contact button on the dropdown menu in desktop view, or by pressing the contact button directly on the navbar in mobile view. The Contact form to the left-hand side will send an email with the entered information to my email address upon submit. The section on the right hand side contains links to my github repo, linkedin page, resume pdf, email address and my phone number. Below that section is a list of my technical skills.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Deployed Link: https://jeffgreco-portfolio.herokuapp.com/
