@@ -15,7 +15,7 @@ function Navbar(props) {
                     <ul className="right hide-on-large-only">
                         <li><a href="#!" onClick={() => props.handlePageChange("Portfolio")}>Portfolio</a></li>
                         <li><a href="#!" onClick={() => props.handlePageChange("Contact")}>Contact</a></li>
-                        <li><a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                        <li><a href="https://docs.google.com/document/d/1Km3hSOwZFYmkg5Dvzq4OTFHjZVYRKWDU9opvqEcyoMo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
                     </ul>
                     <ul className="right hide-on-med-and-down">
                         <Dropdown className="right"
@@ -57,7 +57,7 @@ function Navbar(props) {
                             </li>
                                 
                             <li>
-                            <a href="https://drive.google.com/open?id=1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX" target="_blank" rel="noopener noreferrer" className="waves-effect waves-purple white-text">
+                            <a href="https://docs.google.com/document/d/1Km3hSOwZFYmkg5Dvzq4OTFHjZVYRKWDU9opvqEcyoMo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="waves-effect waves-purple white-text">
                                 Resume</a>
                             </li>
                                 

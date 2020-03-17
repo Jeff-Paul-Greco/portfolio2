@@ -59,8 +59,8 @@ class PortfolioContainer extends Component {
         case "house-party":
         this.setState({ currentProject: "House Party" });
         this.setState({ currentDescription: "Try to answer all of the questions before the time runs out!" })
-        this.setState({ button1: ["https://jeff-paul-greco.github.io/project1", "Site"] });
-        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/project1", "Code"] });
+        this.setState({ button1: ["https://jeff-paul-greco.github.io/House-Party", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/House-Party", "Code"] });
         break;
         case "train":
         this.setState({ currentProject: "Train Scheduler" });
@@ -68,11 +68,11 @@ class PortfolioContainer extends Component {
         this.setState({ button1: ["https://jeff-paul-greco.github.io/train-scheduler", "Site"] });
         this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/train-scheduler", "Code"] });
         break;
-        case "burger":
-        this.setState({ currentProject: "Eat Da Burger" });
-        this.setState({ currentDescription: "This site utilizes express handlebars and MySQL to keep track of which burgers you have eaten. You can even add your own!" })
-        this.setState({ button1: ["https://pure-beach-62697.herokuapp.com", "Site"] });
-        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/burger", "Code"] });
+        case "chat":
+        this.setState({ currentProject: "Real-Time Chat App" });
+        this.setState({ currentDescription: "Real-time chat app using Socket.io, MongoDB, Node and Express. Chat with other users in real time!" })
+        this.setState({ button1: ["https://polar-coast-31177.herokuapp.com/", "Site"] });
+        this.setState({ button2: ["https://github.com/Jeff-Paul-Greco/chat-app", "Code"] });
         break;
         case "liri":
         this.setState({ currentProject: "Liri Node App" });

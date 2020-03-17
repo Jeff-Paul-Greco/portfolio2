@@ -11,6 +11,7 @@ import HouseParty from "../images/house-party.png"
 import Train from "../images/train.png"
 import Burger from "../images/burger.png"
 import Liri from "../images/liri.png"
+import Chat from "../images/chat.PNG"
 
 function Portfolio(props) {
 
@@ -41,6 +42,12 @@ function Portfolio(props) {
                 </a>
 
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
+                    <div id="chat">
+                        <img src={Chat} alt="chat" />
+                    </div>
+                </a>
+
+                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
                     <div id="scraper">
                         <img src={Scraper} alt="scraper" />
                     </div>
@@ -67,12 +74,6 @@ function Portfolio(props) {
                 <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
                     <div id="train">
                         <img src={Train} alt="train" />
-                    </div>
-                </a>
-
-                <a href="#modal-0" className="modal-trigger" onClick={(event) => props.handleClickProject(event)}>
-                    <div id="burger">
-                        <img src={Burger} alt="burger" />
                     </div>
                 </a>
 
