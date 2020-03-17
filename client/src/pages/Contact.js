@@ -120,7 +120,7 @@ class Contact extends Component {
                                         className="icon" alt="github" /></a>
                                     <a href="https://www.linkedin.com/in/jeff-greco-019a28189" rel="noopener noreferrer" target="_blank"><img
                                         src={Linkedin} className="icon" alt="linkedin" /></a>
-                                    <a href="https://docs.google.com/document/d/1Km3hSOwZFYmkg5Dvzq4OTFHjZVYRKWDU9opvqEcyoMo/edit?usp=sharing" rel="noopener noreferrer"
+                                    <a href="https://drive.google.com/file/d/1EGxcgCeX5JwdVODhA8utjJ10ZZQopUyX/view?usp=sharing" rel="noopener noreferrer"
                                         target="_blank"><img src={Resume} className="icon" alt="resume" id="last-icon" /></a>
                                 </div>
                             </div>
